@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Fight_zero", "Fight_zero\Fight_zero.vcproj", "{75F73977-1DB8-4B52-8CA7-091B0CF41FEF}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "fenxing", "fenxing\fenxing.vcproj", "{DAAD3A18-3450-426D-ADEB-8EC8BBF42767}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Blade", "Blade\Blade.vcproj", "{1F063FBA-4A30-45C7-AFCC-522AFBFEE56D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{75F73977-1DB8-4B52-8CA7-091B0CF41FEF}.Debug|Win32.ActiveCfg = Debug|Win32
+		{75F73977-1DB8-4B52-8CA7-091B0CF41FEF}.Debug|Win32.Build.0 = Debug|Win32
+		{75F73977-1DB8-4B52-8CA7-091B0CF41FEF}.Release|Win32.ActiveCfg = Release|Win32
+		{75F73977-1DB8-4B52-8CA7-091B0CF41FEF}.Release|Win32.Build.0 = Release|Win32
+		{DAAD3A18-3450-426D-ADEB-8EC8BBF42767}.Debug|Win32.ActiveCfg = Debug|Win32
+		{DAAD3A18-3450-426D-ADEB-8EC8BBF42767}.Debug|Win32.Build.0 = Debug|Win32
+		{DAAD3A18-3450-426D-ADEB-8EC8BBF42767}.Release|Win32.ActiveCfg = Release|Win32
+		{DAAD3A18-3450-426D-ADEB-8EC8BBF42767}.Release|Win32.Build.0 = Release|Win32
+		{1F063FBA-4A30-45C7-AFCC-522AFBFEE56D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{1F063FBA-4A30-45C7-AFCC-522AFBFEE56D}.Debug|Win32.Build.0 = Debug|Win32
+		{1F063FBA-4A30-45C7-AFCC-522AFBFEE56D}.Release|Win32.ActiveCfg = Release|Win32
+		{1F063FBA-4A30-45C7-AFCC-522AFBFEE56D}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
