@@ -17,6 +17,7 @@ namespace FZ{
 			~Surface(void);
 			static SDL_Surface * on_load(string path);
 			static bool on_draw(SDL_Surface *src, SDL_Rect *srcrect, SDL_Surface *dst,int dx,int dy);
+			static SDL_Surface * create_surface(int width,int height);
 		private :
 			static SDL_Surface * load_bmp_img(string path);
 			static SDL_Surface * load_png_img(string path);

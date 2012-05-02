@@ -81,3 +81,10 @@ SDL_Surface * FZ::Surface::load_png_img(std::string path)
 	return image_surface;
 
 }
+
+SDL_Surface * FZ::Surface::create_surface(int width,int height)
+{
+	SDL_Surface * surface;	
+	surface=SDL_CreateRGBSurface(SDL_SWSURFACE,width,height,32,0,0,0,0);
+	return surface;
+}

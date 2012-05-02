@@ -179,11 +179,19 @@
 				>
 			</File>
 			<File
+				RelativePath=".\GameAnimationFactory.cpp"
+				>
+			</File>
+			<File
 				RelativePath=".\GameConfig.cpp"
 				>
 			</File>
 			<File
 				RelativePath=".\GameObject.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\GameStageObject.cpp"
 				>
 			</File>
 			<File
@@ -200,6 +208,10 @@
 			</File>
 			<File
 				RelativePath=".\MagicianWalkAnimation_1.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\MagicianWalkAnimation_2.cpp"
 				>
 			</File>
 			<File
@@ -237,11 +249,19 @@
 				>
 			</File>
 			<File
+				RelativePath=".\GameAnimationFactory.h"
+				>
+			</File>
+			<File
 				RelativePath=".\GameConfig.h"
 				>
 			</File>
 			<File
 				RelativePath=".\GameObject.h"
+				>
+			</File>
+			<File
+				RelativePath=".\GameStageObject.h"
 				>
 			</File>
 			<File
@@ -258,6 +278,10 @@
 			</File>
 			<File
 				RelativePath=".\MagicianWalkAnimation_1.h"
+				>
+			</File>
+			<File
+				RelativePath=".\MagicianWalkAnimation_2.h"
 				>
 			</File>
 			<File

@@ -6,7 +6,9 @@
 #include "GameConfig.h"
 #include "Surface.h"
 #include "MagicianWalkAnimation.h"
-
+#include "MagicianWalkAnimation_1.h"
+#include "MagicianStandAnimation_2.h"
+#include "GameAnimationFactory.h"
 #include <windows.h>
 #include <iostream>
 #pragma comment(lib,"SDL.lib")
@@ -22,7 +24,11 @@ SDL_Surface * player;
 SDL_Rect rect;
 SDL_Rect rect2;
 SDL_Rect rect3;
-FZ::animation::MagicianWalkAnimation * anima;
+FZ::GameAnimation* anima;
+
+int m_x = 0;
+int m_y = 0;
+
 int _tmain(int argc, _TCHAR* argv[])
 {
 	
@@ -39,12 +45,20 @@ int _tmain(int argc, _TCHAR* argv[])
 	rect2.y = 262;
 
 	screen = FZ::GameConfig::init_game("sd","",400,640);
+	SDL_Surface * sc = FZ::Surface::create_surface(640,400);
+	//SDL_FillRect(sc,0,SDL_MapRGB(sc->format,255,255,255));
+	//SDL_SetAlpha(sc, SDL_SRCALPHA, 0);
 	player = FZ::Surface::on_load("./resource/actors/magician/mofashi-stand-2.png");
-	anima = new FZ::animation::MagicianWalkAnimation(6,8,player,60,131,screen);
+	FZ::Surface::on_draw(sc,NULL,screen,0,0);
+	SDL_Flip(screen);
+	anima = FZ::utils::GameAnimationFactory::get_magician_walk_animation_2(sc);
 	
 	cout<<anima->clips.size()<<endl;
 	cout<<SDL_GetTicks()<<endl;
-
+	FZ::Surface::on_draw(player,&rect,sc,0,0);
+	
+	SDL_Flip(sc);
+	//SDL_UpdateRect(sc, 0, 0, 0, 0);
 	while(true){
 
 		SDL_Event event;
@@ -55,9 +69,9 @@ int _tmain(int argc, _TCHAR* argv[])
 		//SDL_UpdateRect(screen, 0, 0, 0, 0);
 	//	FZ::Surface::on_draw(player,&rect3,screen,0,0);
 		//SDL_Flip(screen);
-	//	SDL_FillRect(screen, NULL, 0);
-		anima->on_draw(0,0);
-	    SDL_Flip(screen);
+		//SDL_FillRect(sc, NULL, 0);
+		//anima->on_draw(m_x,m_y);
+	    //SDL_Flip(sc);
 	}
 
 	return 0;
@@ -88,7 +102,7 @@ void event_line(SDL_Event event)
 						
 						break;
                     case SDLK_RIGHT: cout<<"right"<<endl;
-						
+						m_x+=20;
 						break;
                 }
             }
